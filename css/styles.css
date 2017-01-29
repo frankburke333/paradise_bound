@@ -1,0 +1,351 @@
+/* BASE styles */
+
+html {
+  box-sizing: border-box;
+  font-family: 'Bangers', Helvetica;
+  color: #333333;
+  background: url("https://s-media-cache-ak0.pinimg.com/736x/1f/a8/7c/1fa87c2601aae275bee302bd5c8b7b99.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+
+}
+
+.O {
+  display: none;
+}
+/*
+  This rule ensure that all images always fit in their container
+   but are never stretched beyond their native resolution
+*/
+img {
+  max-width: 100%;
+}
+
+.links_mobile {
+  font-size: 25px;
+  font-family: 'Bangers';
+}
+
+.footer_vitals_mobile {
+  width: 50%;
+  float: left;
+}
+
+.footer_vitals_mobile li  {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.hours_mobile  {
+  font-size: 24px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.hours_mobile li {
+  width: 50%;
+  float: right;
+}
+
+
+.footer_big {
+  display: none;
+}
+
+element.style {
+}
+ul {
+    text-align: left;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;
+}
+
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* CLEARFIX - for ensuring floated elements are contained in their parent */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+select.nav_mobile {
+    background-color: blanchedalmond;
+    font-size: 15px;
+}
+
+
+header h1 {
+  margin-top: 1%;
+  text-align: left;
+  color: #dfd9c1;
+  margin-bottom: 4px;
+  font-size: 77px;
+  -webkit-text-stroke: 1px black;
+
+}
+
+.site-nav {
+  width: 100%;
+  display: none;
+
+}
+
+
+li {
+    font-size: 22px;
+    display: block;
+}
+
+.dropbtn li, a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 9px 5px;
+    text-decoration: none;
+    font-size: 26px;
+    -webkit-text-stroke: 1px black;
+
+}
+
+
+
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 85x 5px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 5px;
+    text-decoration: none;
+    display: block;
+    font-family: helvetica, arial;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+select.select-menu-catnav {
+  margin-left: 0px;
+}
+
+
+
+.discog_p_big {
+  display: none;
+}
+
+.blurb  {
+display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+  header h1 {
+    margin-top: 12%;
+    text-align: center;
+    color: #dfd9c1;
+    margin-bottom: 4px;
+    font-size: 150px;
+    -webkit-text-stroke: 1px black;
+
+  }
+
+  .site-nav {
+    width: 100%;
+    display: inline-block;;
+  }
+
+  ul {
+    background-color: #97707b;
+  }
+
+    .discog_p_small {
+      display: none;
+    }
+
+    .dropdown-content a {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+
+
+  li.dropdown {
+      font-size: 22px;
+      display: inline;
+  }
+  li {
+    display: inline-block;
+  }
+
+  .nav_mobile {
+    display: none;
+  }
+
+  .links_mobile {
+    display: none;
+  }
+
+  .footer_mobile {
+    display: none;
+  }
+
+  .footer_vitals_big {
+      width: 50%;
+      float: left;
+  }
+
+  .hours_big {
+    width: 50%;
+    float: right;
+  }
+
+
+
+@media screen and (min-width: 992px) {
+  .site-nav {
+width: 100%;
+margin-top: -18px;
+}
+
+header h1 {
+  margin-top: 12%;
+  text-align: center;
+  color: #dfd9c1;
+  margin-bottom: 4px;
+  font-size: 150px;
+  -webkit-text-stroke: 1px black;
+
+}
+
+.links_mobile {
+  display: none;
+}
+
+.nav_mobile {
+  display: none;
+}
+
+ul {
+  background-color: #97707b;
+}
+
+.discog_p_small {
+  display: none;
+}
+
+  .main_body {
+  width: 100%;
+
+}
+
+
+.blurb  {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background-blend-mode: lighten;
+  display: inline;
+  margin-bottom: 25px;
+}
+
+li.dropdown {
+    font-size: 18px;
+    display: inline;
+}
+li {
+  display: inline-block;
+}
+
+.hours_mobile {
+  display: none;
+}
+
+
+
+.footer_vitals_mobile {
+  display: none;
+}
+
+.footer_big{
+  display: inline;
+}
+
+.footer_vitals_big {
+    width: 50%;
+    float: left;
+}
+
+.hours_big {
+  width: 50%;
+  float: right;
+}
+
+.hours_big li {
+  display: block;
+  color: white;
+}
+
+.footer_vitals_big li {
+  display: block;
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.main_body p {
+-webkit-margin-after:0px;
+-webkit-margin-before:0px;
+-webkit-margin-end:0px;
+-webkit-margin-start:0px;
+font-size: 30px;
+}
